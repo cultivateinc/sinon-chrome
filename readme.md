@@ -1,5 +1,10 @@
-[![Build Status](https://travis-ci.org/acvetkov/sinon-chrome.svg?branch=master)](https://travis-ci.org/acvetkov/sinon-chrome)
-[![npm version](https://badge.fury.io/js/sinon-chrome.svg)](https://www.npmjs.com/package/sinon-chrome)
+## sinon-chrome
+
+Forked from [acvetkov/sinon-chrome](https://github.com/acvetkov/sinon-chrome).
+
+```
+npm i -D @cultivateinc/sinon-chrome
+```
 
 # Sinon-chrome
 
@@ -14,45 +19,22 @@ Sinon-chrome mocks all chrome api, replaced methods by [sinon stubs](http://sino
 Chrome events replaced by classes with same behavior, so you can test your event handlers with manual triggering chrome events.
 All properties has values from chrome schema files.
 
-
-# Install
-
-We recommend use `sinon-chrome` on Node.js platform.
-
-```
-npm install sinon-chrome --save-dev
-```
-
-But, if you want...
-
-You can download `sinon-chrome` bundle from [release](https://github.com/acvetkov/sinon-chrome/releases) page and include it on your page
-
-```html
-<script src="/path/to/sinon-chrome.min.js">
-```
-
-or
-
-```html
-<script src="/path/to/sinon-chrome-apps.min.js">
-```
-
 # Usage
 
 For mock extensions Api
 
 ```js
-const chrome = require('sinon-chrome');
+const chrome = require('@cultivateinc/sinon-chrome');
 
 // or
 
-const chrome = require('sinon-chrome/extensions');
+const chrome = require('@cultivateinc/sinon-chrome/extensions');
 ```
 
 For mock apps Api
 
 ```js
-const chrome = require('sinon-chrome/apps'); // stable apps api
+const chrome = require('@cultivateinc/sinon-chrome/apps'); // stable apps api
 ```
 
 # Examples
@@ -283,8 +265,8 @@ More info on [example page](https://github.com/acvetkov/sinon-chrome/wiki/Cookie
 - [i18n plugin](https://github.com/acvetkov/sinon-chrome/tree/master/src/plugins/i18n)
 
 ```js
-const chrome = require('sinon-chrome/extensions');
-const CookiePlugin = require('sinon-chrome/plugins').CookiePlugin;
+const chrome = require('@cultivateinc/sinon-chrome/extensions');
+const CookiePlugin = require('@cultivateinc/sinon-chrome/plugins').CookiePlugin;
 
 chrome.registerPlugin(new CookiePlugin());
 ```
@@ -408,10 +390,6 @@ chrome.registerPlugin(new CookiePlugin());
 * [browser.pageAction](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/pageAction)
 * [browser.tabs](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs)
 * [browser.windows](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows)
-
-# Any questions?
-
-Feel free to [open issue](https://github.com/acvetkov/sinon-chrome/issues).
 
 # Useful resources
 [Awesome Browser Extensions And Apps](https://github.com/vitalets/awesome-browser-extensions-and-apps) - a curated list of awesome resources for building browser extensions and apps.
