@@ -3,7 +3,6 @@
  * @overview Firefox's WebExtensions api
  */
 
-import config from '../config/stable-api-ff.json';
-import Api from '../api';
+import factory from './factory';
 
-export default new Api(config).create();
+export default factory();

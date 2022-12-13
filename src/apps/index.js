@@ -3,7 +3,6 @@
  * @overview Apps entry point
  */
 
-import config from '../config/stable-api-apps.json';
-import Api from '../api';
+import factory from './factory';
 
-export default new Api(config).create();
+export default factory();
