@@ -76,7 +76,7 @@ export default class ChromeI18n {
      * @param {String} text
      * @param {Function} callback
      */
-    detectLanguage(text = '', callback = () => {}) {
+    detectLanguage(text = '', callback = () => {}) { // eslint-disable-line no-unused-vars
         callback('en-US');
     }
 }
